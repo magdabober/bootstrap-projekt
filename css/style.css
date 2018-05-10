@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: 'Robot Slab', 'sans-serif';
+}
+
+
+#main-nav {
+   background-color: transparent;
+    transition: all 0.4s;
+}
+
+#main-nav a{
+    color: white;
+    font-weight: 600;
+    transition: all 0.4s;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+}
+
+#main-nav a:hover {
+    color: skyblue;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(135,206,235,0.6);
+}
+
+/*header*/
+
+#main-header {
+    height: 100vh;
+    background-image: url(../img/header/pictures_on_the_wall.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-header .mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+}
+
+#main-header .header-text {
+    color: white;
+}
+
+#main-header .header-text .btn {
+    transition: all 0.4s;
+}
+
+#main-header .header-text .btn:hover {
+    color: skyblue;
+    background-color: white;
+}
+
+/*section*/
+
+#main-section,
+#portfolio,
+#team {
+    padding: 40px;
+}
+
+#main-section .section-text .section-header,
+#portfolio .section-text .section-header,
+#team .section-text .section-header{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+}
+
+#main-section .section-text .section-paraf,
+#portfolio .section-text .section-paraf,
+#team .section-text .section-paraf{
+    margin-bottom: 100px;
+}
+
+.icon-myclass {
+    color: white;
+    height: 70px;
+    width: 70px;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    padding: 10px;
+    transition: all 0.4s;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon-myclass:hover {
+    color: skyblue;
+    background-color: white;
+    transform: rotate(360deg);
+}
+
+.section-subtitle {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+}
+
+/*portfolio*/
+
+#portfolio {
+    background-color: #f7f7f7;
+}
+
+#portfolio .container .row .col-sm-4 .my-class {
+    margin-bottom: 30px;
+}
+
+#portfolio .container .row .col-sm-4 .my-class .overflow {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+#portfolio .container .row .col-sm-4 .picture {
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+#portfolio .container .row .col-sm-4 .picture:hover {
+    transform: scale(1.5);
+}
+
+#portfolio .container .row .col-sm-4 #picture-1 {
+        background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio .container .row .col-sm-4 #picture-2 {
+        background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio .container .row .col-sm-4 #picture-3 {
+        background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio .container .row .col-sm-4 #picture-4 {
+        background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio .container .row .col-sm-4 #picture-5 {
+        background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio .container .row .col-sm-4 #picture-6 {
+        background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+#portfolio .container .row .col-sm-4 .picture .portfolio-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(135,206,235,0.6);
+    opacity:0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .container .row .col-sm-4 .picture .portfolio-mask:hover {
+    opacity:1;
+}
+
+#portfolio .container .row .col-sm-4 .picture .portfolio-mask .portfolio-content a {
+    color: white;
+}
+
+#portfolio .container .row .col-sm-4 .fig-caption {
+    background-color: white;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+#portfolio .container .row .col-sm-4 .fig-caption h4 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#portfolio .container .row .col-sm-4 .fig-caption p {
+    margin: 0;
+}
+
