@@ -1,8 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Robot Slab', 'sans-serif';
+    font-family: 'RobotoSlab', 'sans-serif';
 }
-
 
 #main-nav {
    background-color: transparent;
@@ -25,7 +24,7 @@ body {
     background-color: rgba(135,206,235,0.6);
 }
 
-/*header*/
+/*---------------header----------------------*/
 
 #main-header {
     height: 100vh;
@@ -40,11 +39,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    background: rgba(0,0,0,0.6);
 }
 
 #main-header .header-text {
     color: white;
+}
+
+#main-header .header-text h2 {
+    font-style: italic;
 }
 
 #main-header .header-text h1{
@@ -63,28 +66,21 @@ body {
     background-color: white;
 }
 
-/*-------------------section----------------------------*/
+/*-------------------main section----------------------------*/
 
-#main-section,
-#portfolio,
-#team {
+section {
     padding: 40px;
 }
 
-#main-section .section-text .section-header,
-#portfolio .section-text .section-header,
-#team .section-text .section-header,
-#contact-us .section-text .section-header{
+.section-header{
     margin-bottom: 20px;
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 600;
 }
 
-#main-section .section-text .section-paraf,
-#portfolio .section-text .section-paraf,
-#team .section-text .section-paraf,
-#contact-us .section-text .section-paraf{
+.section-paraf{
     margin-bottom: 100px;
+    font-style: italic;
 }
 
 .icon-myclass {
@@ -93,9 +89,8 @@ body {
     width: 70px;
     background-color: skyblue;
     border: 1px solid skyblue;
-    padding: 10px;
     transition: all 0.4s;
-    line-height: 50px;
+    line-height: 70px;
     margin-bottom: 10px;
 }
 
@@ -116,16 +111,16 @@ body {
     background-color: #f7f7f7;
 }
 
-#portfolio .container .row .col-sm-4 .my-class {
+#portfolio .my-class {
     margin-bottom: 30px;
 }
 
-#portfolio .container .row .col-sm-4 .my-class .overflow {
+#portfolio .my-class .overflow {
     overflow: hidden;
     height: 300px;
 }
 
-#portfolio .container .row .col-sm-4 .picture {
+#portfolio .picture {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,104 +128,101 @@ body {
     transition: all 0.4s;
 }
 
-#portfolio .container .row .col-sm-4 .picture:hover {
+#portfolio .picture:hover {
     transform: scale(1.5);
 }
 
-#portfolio .container .row .col-sm-4 #picture-1 {
+#portfolio  #picture-1 {
         background-image: url(../img/portfolio/box_of_cookies.jpg);
 }
 
-#portfolio .container .row .col-sm-4 #picture-2 {
+#portfolio  #picture-2 {
         background-image: url(../img/portfolio/chaotic_paint.jpg);
 }
 
-#portfolio .container .row .col-sm-4 #picture-3 {
+#portfolio  #picture-3 {
         background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
 }
 
-#portfolio .container .row .col-sm-4 #picture-4 {
+#portfolio  #picture-4 {
         background-image: url(../img/portfolio/child_with_blue_paint.jpg);
 }
 
-#portfolio .container .row .col-sm-4 #picture-5 {
+#portfolio  #picture-5 {
         background-image: url(../img/portfolio/house_with_blue_doors.jpg);
 }
 
-#portfolio .container .row .col-sm-4 #picture-6 {
+#portfolio  #picture-6 {
         background-image: url(../img/portfolio/typing_on_laptop.jpg);
 }
 
-#portfolio .container .row .col-sm-4 .picture .portfolio-mask {
-    
+#portfolio  .picture .portfolio-mask {
     height: 100%;
     background-color: rgba(135,206,235,0.6);
     opacity:0;
     transition: all 0.4s;
 }
 
-#portfolio .container .row .col-sm-4 .picture .portfolio-mask .portfolio-content {
-   
+#portfolio .picture .portfolio-mask .portfolio-content {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#portfolio .container .row .col-sm-4 .picture .portfolio-mask:hover {
+#portfolio .picture .portfolio-mask:hover {
     opacity:1;
 }
 
-#portfolio .container .row .col-sm-4 .picture .portfolio-mask .portfolio-content a {
+#portfolio .picture .portfolio-mask .portfolio-content a {
     color: white;
 }
 
-#portfolio .container .row .col-sm-4 .fig-caption {
+#portfolio .fig-caption {
     background-color: white;
     padding: 20px 10px;
     box-sizing: border-box;
 }
 
-#portfolio .container .row .col-sm-4 .fig-caption h4 {
+#portfolio .fig-caption h4 {
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 600;
     text-transform: uppercase;
 }
 
-#portfolio .container .row .col-sm-4 .fig-caption p {
+#portfolio .fig-caption p {
     margin: 0;
 }
 
 /*-------------team---------------------------*/
 
-#team .container .row .col-sm-4 .figure .figure-caption h5 {
+#team .figure .figure-caption h5 {
     font-weight: 600;
     color: black;
     font-family: 'Montserrat', 'sans sarif';
 }
 
-#team .container .row .col-sm-4 .figure .figure-caption p {
+#team .figure .figure-caption p {
     margin: 0;
 }
 
 .social-media {
-    display: inline-block;
-    width: 100%;
     text-align: center;
     height: 50px;
 }
 
-a.social-media-links i {
+div.social-media a.social-media-links {
+    display: inline-block;
     width: 50px;
     height: 50px;
     background-color: black;
     color: white;
-    line-height: 50px;
+    line-height: 60px;
     margin: 0 5px;
-    transition: all 0.4s;
+    transition: all 0.4s; 
 }
 
-a.social-media-links i:hover {
+div.social-media a.social-media-links:hover {
     background-color: skyblue;
     color: white;
 }
@@ -247,6 +239,7 @@ a.social-media-links i:hover {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    padding: 0;
 }
 
 #contact-us .mask-contact {
@@ -289,7 +282,7 @@ textarea {
     padding: 10px;
 }
 
-#footer .container .row .col-sm-4 p {
+#footer p {
     margin: 0;
     line-height: 50px;
     font-family: 'Montserrat', 'sans-serif';
@@ -300,7 +293,8 @@ textarea {
     justify-content: space-around;
     align-items: center;
 }
-#footer .container .row .col-sm-4 a.footer-links {
+
+#footer a.footer-links {
     font-family: 'Montserrat', 'sans-serif';
     color: black;
 }
