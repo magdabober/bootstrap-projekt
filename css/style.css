@@ -47,16 +47,23 @@ body {
     color: white;
 }
 
+#main-header .header-text h1{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    font-size: 70px;
+}
+
 #main-header .header-text .btn {
     transition: all 0.4s;
 }
 
-#main-header .header-text .btn:hover {
+#main-header .header-text .btn:hover,
+.form-btn-myclass button:hover {
     color: skyblue;
     background-color: white;
 }
 
-/*section*/
+/*-------------------section----------------------------*/
 
 #main-section,
 #portfolio,
@@ -66,7 +73,8 @@ body {
 
 #main-section .section-text .section-header,
 #portfolio .section-text .section-header,
-#team .section-text .section-header{
+#team .section-text .section-header,
+#contact-us .section-text .section-header{
     margin-bottom: 20px;
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 600;
@@ -74,7 +82,8 @@ body {
 
 #main-section .section-text .section-paraf,
 #portfolio .section-text .section-paraf,
-#team .section-text .section-paraf{
+#team .section-text .section-paraf,
+#contact-us .section-text .section-paraf{
     margin-bottom: 100px;
 }
 
@@ -101,7 +110,7 @@ body {
     font-weight: 600;
 }
 
-/*portfolio*/
+/*---------------portfolio----------------------*/
 
 #portfolio {
     background-color: #f7f7f7;
@@ -113,16 +122,13 @@ body {
 
 #portfolio .container .row .col-sm-4 .my-class .overflow {
     overflow: hidden;
-    width: 100%;
     height: 300px;
 }
 
 #portfolio .container .row .col-sm-4 .picture {
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     height: 100%;
     transition: all 0.4s;
 }
@@ -156,11 +162,16 @@ body {
 }
 
 #portfolio .container .row .col-sm-4 .picture .portfolio-mask {
-    width: 100%;
+    
     height: 100%;
     background-color: rgba(135,206,235,0.6);
     opacity:0;
     transition: all 0.4s;
+}
+
+#portfolio .container .row .col-sm-4 .picture .portfolio-mask .portfolio-content {
+   
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,3 +201,106 @@ body {
     margin: 0;
 }
 
+/*-------------team---------------------------*/
+
+#team .container .row .col-sm-4 .figure .figure-caption h5 {
+    font-weight: 600;
+    color: black;
+    font-family: 'Montserrat', 'sans sarif';
+}
+
+#team .container .row .col-sm-4 .figure .figure-caption p {
+    margin: 0;
+}
+
+.social-media {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+
+a.social-media-links i {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    margin: 0 5px;
+    transition: all 0.4s;
+}
+
+a.social-media-links i:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+#team p {
+    margin-top: 20px;
+}
+
+/*--------------contact us-------------*/
+
+#contact-us {
+    background-image: url(../img/footer/world-map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#contact-us .mask-contact {
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+    padding: 40px;
+}
+
+.form-myclass {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.form-control-myclass {
+    padding: 10px 15px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+}
+
+textarea {
+    height: 200px;
+}
+
+.textarea-myclass {
+    margin:0;
+}
+
+.form-btn-myclass {
+    margin: 20px 0;
+}
+
+.form-btn-myclass button {
+    transition: all 0.4s;
+}
+
+/*--------------footer--------------------*/
+
+#footer {
+    padding: 10px;
+}
+
+#footer .container .row .col-sm-4 p {
+    margin: 0;
+    line-height: 50px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.footer-links-outer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer .container .row .col-sm-4 a.footer-links {
+    font-family: 'Montserrat', 'sans-serif';
+    color: black;
+}
